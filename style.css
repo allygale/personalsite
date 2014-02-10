@@ -1,0 +1,113 @@
+body, html {
+	height:100%;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: x-large;
+	letter-spacing: .01em;
+}
+
+h2 
+{
+	text-decoration: underline;
+}
+#title 
+{
+	padding-top: 150px;
+	font-size: 50px;
+}
+
+.toplinks 
+{
+	padding-top: 10px;
+}
+
+#navlist li
+{
+	display:inline;
+	padding-right: 20px;
+}
+
+#navlist li:last-child
+{
+	padding-right: 0px;
+}
+
+h1 a:link 
+{
+	color: #c0c0c0;
+	text-decoration: none;
+}
+
+.verticalLine {
+    height:100%;
+    width:300px;
+    position:fixed;
+    left:50%;
+    
+    top:0;
+    z-index: -1;
+
+}
+
+#verticalline1 {
+	border-left:4px solid #333;
+	margin-left:-275px;
+}
+#verticalline2 {
+	border-left:1px solid #333;
+	margin-left:375px;
+}
+#verticalline3 {
+	border-left:1px solid #333;
+	margin-left:350px;
+}
+
+.horizontalLine {
+    border-top:4px solid #333;
+    height:300px;
+    width:100%;
+    position:absolute;
+    top:0;
+    margin-top:250px;
+    z-index: -1;
+
+}
+
+/* other pages */
+#interestsPage {
+	display:none;
+}
+#projectsPage {
+	display:none;
+}
+
+/***BLOG STUFF***/
+#blogPage {
+	display:none;
+}
+
+#blogContent {
+	font-weight: normal;
+	height:100%;
+	padding
+}
+
+#blogContent p {
+	text-transform: none;
+	font-weight: lighter;
+	margin: .7em auto 1em auto;
+	width: 680px;
+}
+
+.blogTitle {
+	padding-top:50px;
+	padding-bottom:20px;
+	font-size: 1.5em;
+	color: #333;
+	font-weight: normal;
+	margin-top: 1em;
+	text-align: center;
+}
