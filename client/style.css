@@ -41,6 +41,11 @@ h1 a:link
 	text-decoration: none;
 }
 
+h1 a:visited {
+	color: #c0c0c0;
+	text-decoration: none;
+}
+
 .verticalLine {
     height:100%;
     width:300px;
@@ -102,7 +107,7 @@ h1 a:link
 	width: 680px;
 }
 
-.blogTitle {
+#blogContent h1 {
 	padding-top:50px;
 	padding-bottom:20px;
 	font-size: 1.5em;
