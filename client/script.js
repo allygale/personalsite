@@ -18,16 +18,17 @@ var allygale = document.querySelector("#allygale");
 var interests = document.querySelector("#interests");
 var projects = document.querySelector("#projects");
 var blog = document.querySelector("#blog");
+var contact = document.querySelector("#contact");
 
 function hidePages() {
 	var pages = Array.prototype.slice.call(document.querySelectorAll(".contentPage"), 0);
 	pages.map(function(e) {e.style.display="none"});
 }
 
-allygale.onclick = function(e) {
-	hidePages();
-	allygalePage.style.display="block";
-}
+// allygale.onclick = function(e) {
+// 	hidePages();
+// 	allygalePage.style.display="block";
+// }
 
 interests.onclick = function(e) {
 	hidePages();
@@ -37,6 +38,11 @@ interests.onclick = function(e) {
 projects.onclick = function(e) {
 	hidePages();
 	projectsPage.style.display="block";
+}
+
+contact.onclick = function(e) {
+	hidePages();
+	contactPage.style.display="block";
 }
 
 blog.onclick = function(e) {
