@@ -1,16 +1,24 @@
 var blogLoaded = false;
+var blogTitles = ["happy", "sad"];
 
 function loadBlog() {
 	var xhReq = new XMLHttpRequest();
- 	xhReq.open("GET", "/posts/happy.txt", true);
- 	xhReq.onreadystatechange = function() {
+	for (i=0; i<blogTitles.length;i++){
+		xhReq.open("GET", "/posts/" + blogTitles[i] + ".txt", false);
+		xhReq.onreadystatechange = function() {
  		//markdown.toHTML(input.value);
- 		if (xhReq.readyState == XMLHttpRequest.DONE && xhReq.status == 200) {
- 			var blogContent = document.querySelector("#blogContent");
- 			blogContent.innerHTML = markdown.toHTML(xhReq.responseText); 
- 		}
- 	};
- 	xhReq.send();
+ 			if (xhReq.readyState == XMLHttpRequest.DONE && xhReq.status == 200) {
+ 				var blogContent = document.querySelector("#blogContent");
+ 				//blogContent.innerHTML = currentContent + markdown.toHTML(xhReq.responseText);
+ 				var newContent = document.createElement('div');
+ 				newContent.innerHTML = markdown.toHTML(xhReq.responseText);
+ 				// Making sure to append all items in the div
+ 				blogContent.appendChild(newContent);
+ 				
+ 			}
+ 		};
+ 		xhReq.send();
+	}
  	blogLoaded = true;
 }
 

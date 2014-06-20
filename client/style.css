@@ -36,13 +36,17 @@ h2
 	padding-right: 0px;
 }
 
-h1 a:link 
-{
+h1 a:link {
 	color: #c0c0c0;
+}
+
+a:link 
+{
+	color: #333;
 	text-decoration: none;
 }
 
-h1 a:visited {
+a:visited {
 	color: #c0c0c0;
 	text-decoration: none;
 }
